@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+    <head>
+        <title>Prueba</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="lib/angular/js/angular.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    </head>
+
+    <body ng-controller="PruebaController">
+        <input type="text" ng-model="direccion.nombreVia"/>
+        <input type="text" ng-model="direccion.puerta"/>
+        <input type="text" ng-model="direccion.codigoPostal"/>
+        <br>
+        <br>
+        Dirección: {{direccion.nombreVia}}, {{direccion.puerta}} CP: {{direccion.codigoPostal}}<br>
+        <button ng-click="onClickButtonCambiar()">Cambiar</button>
+    </body>
+</html>
+ 
